@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .bg-primary {
+        background-color: #141628;
+        
+    }
+    .bg-button {
+        background-color: #F62BA5;
+    }
+    .main-font {
+        color: #F62BA5;
+    }
+    .bg-section-two {
+        background-color: #1B1E32;
+    }
+}
