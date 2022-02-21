@@ -8,8 +8,9 @@
     <title>Dev Portfolio</title>
 </head>
 <body class="bg-primary">
+    <!-- Navbar -->
     <header class="py-6 font-poppins font-medium text-lg">
-        <nav class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
+        <nav id="top" class="container flex justify-between items-center mx-auto px-8 md:px-14 lg:px-24 w-full">
             <div class="text-3xl font-bold text-white">Jane Doe</div>
                 <div class="hidden md:flex space-x-12 items-center text-white ">
                     <a href="#" class="text-selected-text">Home</a>
@@ -25,43 +26,214 @@
                         style=" fill:#ffffff;"><path d="M 3 5 A 1.0001 1.0001 0 1 0 3 7 L 21 7 A 1.0001 1.0001 0 1 0 21 5 L 3 5 z M 3 11 A 1.0001 1.0001 0 1 0 3 13 L 21 13 A 1.0001 1.0001 0 1 0 21 11 L 3 11 z M 3 17 A 1.0001 1.0001 0 1 0 3 19 L 21 19 A 1.0001 1.0001 0 1 0 21 17 L 3 17 z"></path>
                     </svg>
                 </div>
-        </>
     </header>
 
     
-    <section class="container mx-auto mt-10 py-20">
-        <div class="flex items-center justify-around flex-wrap mb-20">
-            <div class="w-full md:w-4/12">
-                <img src="/layouts/assets/you.jpg" alt="Reporting" class="rounded-3xl" />
+    <section class="container pt-24 md:pt-26 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+        <!-- Left column -->
+            <div class="w-full xl:w-2/5 p-12 overflow-hidden">
+                <img src="/layouts/assets/you.jpg" alt="your name" class="rounded-3xl mx-auto w-full md:w-4/5 " />
+                <div class=" flex space-x-6 my-16 justify-center">
+                    <div>
+                        <img width="45" height="45" src="/layouts/assets/linkedin-icon.png" alt="Reporting" class="rounded-sm" />
+                    </div>
+                    <div>
+                        <img width="35" height="30" src="/layouts/assets/github-icon.png" alt="Reporting" class="rounded-sm mt-1" />
+                    </div>
+                    <div>
+                        <img width="40" height="25" src="/layouts/assets/twitter-icon.png" alt="Reporting" class=" mt-1" />
+                    </div>
+                    <div>
+                        <img width="55" height="40" src="/layouts/assets/email-icon.png" alt="Reporting" class="rounded-xl -mt-1" />
+                    </div>
+                </div>
             </div>
-            <div class="w-full ml-5 md:w-7/12 pl-10">
+            
+        
+            <!-- Right column -->
+            <div class="flex flex-col w-full p-2 xl:w-3/5 justify-center lg:items-start overflow-y-hidden">
                 <h1 class="font-semibold font-poppins text-4xl text-white md:text-2xl lg:text-5xl text-center md:text-center">Hello!<br> I'm <span class="main-font">Jane Doe</span>, a Frontend Developer based in Europe</h1>
                 <p class="font-thin font-montserra text-white mt-20 text-2xl md:text-2xl lg:text-2xl text-center md:text-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, aliquid placeat? Beatae nam porro dolore. Deleniti magnam ad quae nesciunt.</p>
-                <p class="font-thin font-montserra text-white mt-8 text-2xl md:text-2xl lg:text-2xl text-left md:text-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, aliquid placeat? Beatae nam porro dolore. Deleniti magnam ad quae nesciunt.</p>
-            <div class="flex space-x-16  mx-1">
+                <p class="font-thin font-montserra text-white mt-16 text-2xl md:text-2xl lg:text-2xl text-center md:text-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, aliquid placeat? Beatae nam porro dolore. Deleniti magnam ad quae nesciunt.</p>
+            <div class="flex space-x-10 my-2 md:items-center justify-center mb-16">
                     <a href="html/index.html" target="_blank"
                     rel="noopener noreferrer">
-                        <button class="px-8 py-3 rounded-xl text-white font-bold font-poppins mt-12 ml-10 flex items-center space-x-3 border-solid border-2 border-white text-xl"> 
-                        <span>Projects</span>
+                        <button class="px-8 py-3 rounded-xl text-white font-bold font-poppins mt-20  flex items-center space-x-3 border-solid border-2 border-white text-xl"> 
+                            <span>Projects</span>
                         </button>
                     </a>
                     <a href="html/index.html" target="_blank"
                     rel="noopener noreferrer">
-                        <button class="px-8 py-4 bg-button rounded-xl text-white font-bold font-poppins mt-12 flex items-center text-xl "> 
+                        <button class="px-8 py-4 bg-button rounded-xl text-white font-bold font-poppins mt-20 flex items-center text-xl "> 
                         <span class="">Resume</span>
                         </button>
                     </a>
             </div>
+            </div>
+    </div>
+</section>
+
+
+
+    <!-- Projects section -->
+    <section class="bg-section-two">
+        <div class="container pt-24 md:pt-26 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+            <div class="flex flex-col w-full p-4 xl:w-3/5 justify-center lg:items-start overflow-y-hidden">
+                <h1 class="font-semibold font-poppins text-4xl text-white md:text-2xl lg:text-5xl text-left md:text-left ">Projects</h1>
+                <div class="flex space-x-10 my-2 md:items-center justify-center ">
+                    <button class="p-4 rounded-full text-white font-bold font-poppins mt-12 flex items-center space-x-3 border-solid border-2 border-[#F62BA5]"> 
+                        <div>
+                            <img width="23" height="23" src="/layouts/assets/arrow-left.png"/>
+                        </div>
+                    </button>
+                    <span class="text-white font-semibold text-xl mt-16">1/2</span>
+                    <button class="p-4 rounded-full text-white font-bold font-poppins mt-12 flex items-center space-x-3 border-solid border-2 border-[#F62BA5]"> 
+                        <div>
+                            <img width="23" height="23" src="/layouts/assets/arrow-right.png"/>
+                        </div>
+                    </button>
+                </div>
+                <p class="text-white font-semibold font-montserrat text-xl mt-16 ">Approach</p>
+                <p class="font-thin font-montserra text-white mt-8 text-2xl md:text-2xl lg:text-2xl text-left md:text-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, aliquid placeat? Beatae nam porro dolore. Deleniti magnam ad quae nesciunt.</p>
+                <p class="font-thin font-montserra text-white mt-8 text-2xl md:text-2xl lg:text-2xl text-left md:text-left">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque, aliquid placeat? Beatae nam porro dolore. Deleniti magnam ad quae nesciunt.</p>
+                <p class="text-white font-semibold font-montserrat text-xl mt-16">Tech Stack</p>
+                <p class="font-thin font-montserra text-white mt-8 text-2xl md:text-2xl lg:text-2xl text-left md:text-left">React &nbsp Styled-Components &nbsp MongoDB</p>
+            <div class="flex space-x-10 my-2 md:items-center justify-center mb-16">
+                
+                    <a href="html/index.html" target="_blank"
+                    rel="noopener noreferrer">
+                        <button class="px-8 py-3 rounded-xl text-white font-bold font-poppins mt-16 flex items-center space-x-3 border-solid border-2 border-white text-xl sm:w-auto w-1/2"> 
+                        <span>Live Demo</span>
+                        </button>
+                    </a>
+                    <a href="html/index.html" target="_blank"
+                    rel="noopener noreferrer">
+                        <button class="px-8 py-4 bg-button rounded-xl text-white font-bold font-poppins mt-16 flex items-center text-xl w-full sm:w-auto"> 
+                        <span class="">Source Code</span>
+                        </button>
+                    </a>
+            </div>
+        </div>
+        <div class="w-full xl:w-2/5 p-12 overflow-hidden">
+            <img src="/layouts/assets/project.jpg" alt="Reporting" class="rounded-3xl" />
         </div>
     </div>
+    </section>
+</div>
 
-    <section class="bg-secion-two container mx-auto mt-10 py-20">
-        <div class="w-full">
-hello
-        </div>
+
+    <!-- Skills section -->
+    <section class="bg-primary mb-20">
+            <div class="container pt-24 md:pt-26 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+                    <div class="flex flex-col w-full p-4 xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
+                        <h1 class="font-semibold font-poppins text-4xl text-white mb-32 md:text-2xl lg:text-5xl text-left md:text-left">Skills & Tools</h1>
+                    <div class="w-full flex flex-row md:flex-col justify-between">
+                        <p class="text-[#F62BA5] font-medium font-montserrat text-3xl">Development</p>
+                        
+                            <div>
+                                <img width="70" height="70" src="/layouts/assets/html.svg"/>
+                            </div>
+                            <div>
+                                <img width="70" height="70" src="/layouts/assets/css.svg"/>
+                            </div>
+                            <div>
+                                <img width="70" height="70" src="/layouts/assets/react.svg"/>
+                            </div>
+                            <div>
+                                <img width="70" height="70" src="/layouts/assets/js.svg"/>
+                            </div>
+                    </div>
+                
+                    <div class="w-full flex flex-row md:flex-col justify-between mt-16">
+                        <p class="text-[#F62BA5] font-medium font-montserrat text-3xl ">Design</p>
+                        
+                            <div>
+                                <img width="70" height="70" src="/layouts/assets/figma.svg"/>
+                            </div>
+                            <div>
+                                <img width="70" height="70" src="/layouts/assets/canva.svg"/>
+                            </div>
+                            <div>
+                                <img width="70" height="70" src="/layouts/assets/canva.svg"/>
+                            </div>
+                            <div>
+                                <img width="70" height="70" src="/layouts/assets/canva.svg"/>
+                            </div>
+                    </div>
+                </div>  
+                </div>
     </section>
 
 
 
-    
+    <!-- Contact section -->
+    <section class="bg-section-two">
+        <div class="container pt-24 md:pt-26 mx-auto flex flex-wrap flex-col md:flex-row items-center">
+            <div class="flex flex-col w-full xl:w-3/5 p-5 pb-24 justify-center lg:items-start overflow-y-hidden">
+                <h1 class="font-semibold font-poppins text-4xl text-white md:text-2xl lg:text-5xl text-left md:text-left ">Contact</h1>
+                
+                <form class="w-full">
+                    <div class="mb-6 mt-20">
+                        <label for="name" class="block mb-2 font-bold text-lg font-poppins main-font">Full Name</label>
+                        <input type="name" id="email" class="bg-primary text-gray-900 text-sm rounded-lg block w-full p-5 dark:text-white focus:outline-none focus:ring focus:border-main-font" required>
+                    </div>
+                    <div class="mb-6">
+                        <label for="email" class="block mb-2 text-lg font-bold font-poppins main-font">Email</label>
+                        <input type="email" id="password" class="bg-primary text-gray-900 text-sm rounded-lg  block w-full p-5  dark:text-white focus:outline-none focus:ring focus:border-main-font" placeholder="you@email.com" required>
+                    </div>
+
+                    <div class="flex items-start mb-6">
+                        <div class="container">
+                            <label for="message" class="block mb-2 text-lg font-bold font-poppins main-font">Message</label>
+                            <textarea id="message" rows="5" class=" block rounded-lg bg-primary dark:text-white w-full p-3 focus:outline-none focus:ring focus:border-main-font"></textarea>
+                        </div>
+                    </div>
+                    
+                        <button type="submit" class="text-white text-xl bg-button rounded-lg w-full sm:w-auto px-8 py-3 mt-8 bg-button text-center font-bold font-poppins">Send</button>
+                    
+                </form>
+            </div>
+            <div class="w-full xl:w-2/5 p-12 overflow-hidden">
+                <img src="/layouts/assets/you2.png" alt="Reporting" class="rounded-3xl mx-auto w-full md:w-2/5"/>
+            </div>
+        </div>
+        
+    </section>
+
+
+<!-- <a href="#top">Back to Top</a> -->
+
+    <!-- Footer -->
+    <footer class="bg-primary md:p-6">
+        <div class="flex flex-wrap justify-around p-16">
+            <div class="flex">
+                <h2 class="text-white font-montserrat font-bold text-lg">Socials</h2>
+                <div class="flex space-x-6 ml-10 ">
+                    <div>
+                        <img width="35" height="45" src="/layouts/assets/linkedin-icon.png" alt="Reporting" class="rounded-sm" />
+                    </div>
+                    <div>
+                        <img width="25" height="30" src="/layouts/assets/github-icon.png" alt="Reporting" class="rounded-sm mt-1" />
+                    </div>
+                    <div>
+                        <img width="30" height="25" src="/layouts/assets/twitter-icon.png" alt="Reporting" class=" mt-1" />
+                    </div>
+                    <div>
+                        <img width="45" height="40" src="/layouts/assets/email-icon.png" alt="Reporting" class="rounded-xl -mt-1" />
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="flex ">
+                <p class="main-font text-lg font-montserrat">
+                    @yourname 2022
+                </p>
+            </div>
+        </div>
+        
+    </footer>
+
+</body>
+
 </html>

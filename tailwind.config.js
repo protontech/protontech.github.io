@@ -4,7 +4,6 @@ module.exports = {
   ],
   theme: {
     extend: {
-      
         colors: {
           'body': '#17171F',
           'selected-text': '#F62BA5',

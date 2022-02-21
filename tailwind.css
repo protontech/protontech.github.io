@@ -16,4 +16,9 @@
     .bg-section-two {
         background-color: #1B1E32;
     }
+    .swiper {
+        width: 600px;
+        height: 300px;
+      }
+      
 }
