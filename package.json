@@ -7,7 +7,7 @@
     "dev": "npx tailwindcss -i tailwind.css -o ./layouts/css/styles.css --watch",
     "prod": "npx tailwindcss -i tailwind.css -o ./layouts/css/styles.css --minify"
   },
-  "author": "",
+  "author": "Andreea Egli-Hehl",
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.0.23"
