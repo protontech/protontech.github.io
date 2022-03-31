@@ -1,0 +1,74 @@
+h1, h2, h3, h4, h5, p{ color: #fff; }
+h2, h3 { font-weight: 500 }
+main{
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+}
+
+main > div{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-card{
+    width: 60%;
+    height: 300px;
+    margin: 2rem 0 1rem 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.brand{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: transparent;
+    border: 1.5px solid #fff;
+    width: 3rem;
+    height: 3rem;
+    padding: 8px;
+}
+
+.brand:hover{
+    background:#F80095;
+    border-color: #F80095;
+}
+
+svg{
+    transform: scale(0.8)
+}
+
+#abdullahi-abdulrahman{
+    background-image: url('../assets/Abdulrahman.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+#fortune-alebiosu{
+    background-image: url('../assets/Fortune.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.btn-visit{
+    background: #fff;
+}
+
+
+@media (max-width: 768px){
+    main{
+        grid-template-columns: 1fr;
+    }
+
+    .profile-card{
+        width: 90%;
+        justify-content: space-between;
+    }
+}
